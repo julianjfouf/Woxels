@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("http://localhost:3000/bebas-neue-v9-latin-regular.woff")
+    format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.title {
+  font-family: "Bebas Neue";
+}
+
+*::selection {
+  background: #030303;
+  color: #fcfcfc;
+}
+
+.product-list {
+  animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  position: absolute;
+  bottom: 50px;
+  width: 100vw;
+}
+
+.product-list {
+  display: flex;
+}
+
+.product-item {
+  flex: 0 0 33.33333333vw;
+  height: 50vh;
+}
