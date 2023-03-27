@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Bebas Neue";
-  src: url("http://localhost:3000/bebas-neue-v9-latin-regular.woff")
+  src: url("https://woxels.vercel.app/bebas-neue-v9-latin-regular.woff")
     format("woff");
 }
 
