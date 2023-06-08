@@ -85,7 +85,7 @@ export default function Home() {
           className={`mouse h-[10px] w-[10px] bg-[#FCFCFC] rounded-full duration-[50ms] absolute`}
         />
         <Nav Home={true} opacity={opac} />
-        <div className="ml-[20px] absolute top-[50%] left-[50%] mt-[20px] w-min z-[1000000] containment duration-500">
+        <div className="ml-[20px] absolute top-[50%] left-[50%] mt-[28px] w-min z-[1000000] containment duration-500">
           <h1
             className="absolute translate-y-[-100%] 4k:text-[480px] 2k:text-[420px] hd:text-[360px] 2xl:text-[320px] xl:text-[280px] lg:text-[230px] md:text-[160px] sm:text-[120px] text-[60px] uppercase title mb-[-20px] z-[10] duration-500"
             style={{ pointerEvents: "none", userSelect: "none" }}

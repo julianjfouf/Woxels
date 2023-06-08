@@ -1,4 +1,8 @@
+import Image from "next/image";
 import { useEffect } from "react";
+import project1 from "../../public/projects/danos project 1 image.jpg";
+import project2 from "../../public/projects/project 5 Image.jpg";
+import project3 from "../../public/projects/Project 4 Image.jpg";
 
 // // export default function Carousel() {
 // //   const slides = [
@@ -26,15 +30,25 @@ import { useEffect } from "react";
 export default function Carousel() {
   const slides = [
     {
-      title: "project 1",
+      title: "Dano's Detailing",
+      image: project1,
+      desc: "Local Car Detailing Business Multi-Page Informational Website With Clean Animations",
+      link: "https://danosdetailing.com/",
     },
     {
-      title: "project 2",
+      title: "Malik's Tints",
+      image: project2,
+      desc: "Local Car Window Tinting Business Single-Page Informational Website With 3D Simulator and 3D Icons",
+      link: "https://malikstints.com/",
     },
     {
-      title: "project 3",
+      title: "Marble Run",
+      image: project3,
+      desc: "3D Desktop Game",
+      link: "https://marblerun.vercel.app/",
     },
   ];
+
   useEffect(() => {
     const carousel = document.querySelector(".carousel");
     const productList = document.querySelector(".product-list");
@@ -57,12 +71,24 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="carousel absolute w-screen h-1/2 overflow-hidden">
-      <ul className="product-list flex h-full w-screen">
-        {slides.map((slide) => (
-          <li className="duration-500 product-item cursor-pointer bg-[#030303] h-full text-[#FCFCFC] p-4 mx-1">
-            {slide.title}
-          </li>
+    <div className="carousel absolute w-screen overflow-hidden z-[10000000]">
+      <ul className="product-list flex w-screen z-[10000000]">
+        {slides.map((slide, i) => (
+          <a
+            target="_blank"
+            href={slide.link}
+            key={i}
+            className="duration-500 flex flex-col justify-between relative product-item cursor-pointer hover:brightness-75 z-[10000000] min-w-[480px] bg-[#030303] text-[#FCFCFC] p-4 mx-1"
+          >
+            <span className="block xs:text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold">
+              {slide?.title}
+            </span>
+            <Image
+              src={slide?.image}
+              className="absolute left-0 bottom-[50%] translate-y-[50%] right-0 object-cover"
+            />
+            <span className="block lg:text-lg">{slide?.desc}</span>
+          </a>
         ))}
       </ul>
     </div>

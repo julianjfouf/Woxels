@@ -25,7 +25,13 @@
 }
 
 .product-list {
-  animation: scroll 60s linear infinite;
+  animation: scroll 300s linear infinite;
+}
+
+@media (max-width: 720px) {
+  .product-list {
+    animation: scroll 90s linear infinite;
+  }
 }
 
 @keyframes scroll {
@@ -33,7 +39,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-1000%);
   }
 }
 
