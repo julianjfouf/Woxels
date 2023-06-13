@@ -28,6 +28,10 @@
   animation: scroll 300s linear infinite;
 }
 
+.product-list:hover {
+  animation-play-state: paused;
+}
+
 @media (max-width: 720px) {
   .product-list {
     animation: scroll 90s linear infinite;

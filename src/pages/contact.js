@@ -100,7 +100,7 @@ export default function Contact() {
         <div className="absolute bottom-[80px] xl:text-[48px] lg:text-[36px] md:text-[28px] sm:text-[23px] text-[12px] flex w-screen">
           <div className="border-[#030303] absolute left-[20px] bottom-[20px] text-[#030303] py-[20px] border-t border-b z-10">
             <p>mail . woxelswebsites@gmail.com</p>
-            <p>ig . @woxels</p>
+            <p>ig . @woxelswebsites</p>
           </div>
           <div className="border-[#030303] absolute right-[20px] bottom-[20px] text-[#030303] py-[20px] border-t border-b">
             <p>phone . (209) 637-9231</p>
