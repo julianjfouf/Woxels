@@ -66,7 +66,7 @@ export default function Contact() {
           content="We are a website development agency that provides services to those who want to increase and improve their business's online reach."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Woxels Logo.png" />
       </Head>
       <main className="relative text-[#030303] bg-[#FCFCFC] h-screen w-screen overflow-hidden">
         <div
